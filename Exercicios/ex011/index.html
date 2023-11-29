@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p
+    >Tente abrir esse site em varios dispositivos diferente ou simplismente aumente e diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-media.png" type="image/png">
+        <img src="imagens/imagem-grande.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio em html5</h1>
+    <audio  preload="metadata" controls>
+        <source src="midia/Musica para o site.mp3" type="audio/mpeg" >
+        <source src="midia/musica site2.wav" type="audio/wav">
+        <source src="midia/Underground Academy - Hanu Dixit (online-audio-converter.com).ogg" type="audio/ogg">
+        <p>Infelzmente sue navegador não consegue carregar o áudio <a href="midia/Musica para o site.mp3">Clique aqui</a> para fazer o download</p>
+    </audio>
+    
+</body>
+</html>
