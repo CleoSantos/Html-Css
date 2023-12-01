@@ -54,9 +54,11 @@ section{
     font-family: var(--fonte3);
 }
 
-section.imagem{
+section#imagem1{
     background-color: rgba(0, 0, 0, 0.267);
     color:white;
+    background-image: url('../imagens/background001.jpg');
+    background-attachment: fixed;
     
 }
 
