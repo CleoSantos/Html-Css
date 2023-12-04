@@ -10,6 +10,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 400px;
             border-collapse: collapse   ;
+            position: relative;
         }
         caption{
             background-color: lightgray;
@@ -26,6 +27,11 @@
             background-color: rgba(20, 16, 16, 0.884);
             color: white;
             text-align: center;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(20, 16, 16);
         }
          tbody > tr:nth-child(odd){
             background-color: lightgray;
@@ -194,5 +200,7 @@
             </tr>
        </tfoot>
     </table>
+
+
 </body>
 </html>
