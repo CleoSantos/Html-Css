@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>forumlarios</h1>
+
+    <form action="cadastro.php" method="post">
+        
+        <label for="iestados">Estados:</label>
+        <select name="estados" id="iestados">
+            <optgroup label="Região Suldeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="SC" selected>Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PA">Parána</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprofi">Profissão</label>
+            <input type="text" name="profi" id="iprofi" list="listaprofi">
+            <datalist id="listaprofi">
+                <option value="ADM">Administador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Menssagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea >
+        </p>
+
+        <p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
